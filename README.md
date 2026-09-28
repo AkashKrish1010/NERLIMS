@@ -1,3 +1,10 @@
+<div align="center">
+
+# 🇮🇳 Smart India Hackathon 2026
+### **Team Name:** FirstLight &nbsp;|&nbsp; **Team ID:** 121987
+
+</div>
+
 <p align="center">
   <img src="hero-banner.jpg" alt="NERLIMS - North East Region Logistics & Incident Management System" width="100%" />
 </p>
@@ -13,6 +20,8 @@ The platform bridges central disaster authorities, state logistics bureaus, emer
 ## Problem Statement Details
 
 - **Event:** Smart India Hackathon 2026
+- **Team Name:** FirstLight
+- **Team ID:** 121987
 - **Problem Statement ID:** 26002
 - **Problem Statement Title:** AI-Based Smart Logistics and Accessibility Intelligence Platform for North Eastern Region (NER)
 - **Organization:** Ministry of Development of North Eastern Region (MDoNER)

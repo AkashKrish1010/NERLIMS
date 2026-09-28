@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 1200" width="100%" height="100%" style="background-color: #080D1A; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Background Grid Pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#121D33" stroke-width="1.2"/>
+    </pattern>
+    <pattern id="grid-major" width="120" height="120" patternUnits="userSpaceOnUse">
+      <rect width="120" height="120" fill="url(#grid)"/>
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#1E2E4F" stroke-width="1.8"/>
+    </pattern>
+
+    <!-- Arrow Markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#38BDF8"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#34D399"/>
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#FBBF24"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#F87171"/>
+    </marker>
+
+    <!-- Box Glow Filter -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0284C7" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Grid -->
+  <rect width="880" height="1200" fill="#080D1A"/>
+  <rect width="880" height="1200" fill="url(#grid-major)"/>
+
+  <!-- Title Header Banner -->
+  <rect x="140" y="24" width="600" height="64" rx="14" fill="#0F172A" stroke="#38BDF8" stroke-width="2.5" filter="url(#glow-cyan)"/>
+  <text x="440" y="52" fill="#FFFFFF" font-size="22" font-weight="900" text-anchor="middle" letter-spacing="1">NERLIMS SYSTEM ARCHITECTURE</text>
+  <text x="440" y="74" fill="#38BDF8" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="0.5">SIH 2026 | PROBLEM STATEMENT: 26002</text>
+
+  <!-- ==================== LEFT ACTOR: RELIEF TRUCK DRIVER ==================== -->
+  <g transform="translate(65, 140)">
+    <!-- Stick Figure -->
+    <circle cx="25" cy="18" r="14" fill="none" stroke="#FFFFFF" stroke-width="2.8"/>
+    <line x1="25" y1="32" x2="25" y2="75" stroke="#FFFFFF" stroke-width="2.8"/>
+    <line x1="2" y1="48" x2="48" y2="48" stroke="#FFFFFF" stroke-width="2.8"/>
+    <line x1="25" y1="75" x2="8" y2="110" stroke="#FFFFFF" stroke-width="2.8"/>
+    <line x1="25" y1="75" x2="42" y2="110" stroke="#FFFFFF" stroke-width="2.8"/>
+    <text x="25" y="132" fill="#FFFFFF" font-size="15" font-weight="800" text-anchor="middle">Relief Truck</text>
+    <text x="25" y="150" fill="#38BDF8" font-size="14" font-weight="800" text-anchor="middle">Driver</text>
+  </g>
+
+  <!-- ==================== LEFT DRIVER OPERATIONS COLUMN ==================== -->
+  <!-- Connector from Driver to Login -->
+  <line x1="115" y1="188" x2="162" y2="188" stroke="#FFFFFF" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Node D1: Mobile Driver Login -->
+  <rect x="165" y="155" width="260" height="66" rx="12" fill="#0F172A" stroke="#38BDF8" stroke-width="2.5"/>
+  <text x="295" y="184" fill="#FFFFFF" font-size="17" font-weight="800" text-anchor="middle">Mobile Driver</text>
+  <text x="295" y="206" fill="#38BDF8" font-size="16" font-weight="800" text-anchor="middle">Login / Auth</text>
+
+  <!-- Arrow D1 -> D2 -->
+  <line x1="295" y1="221" x2="295" y2="265" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Node D2: Standby Dispatch Ingestion -->
+  <rect x="165" y="268" width="260" height="88" rx="12" fill="#0F172A" stroke="#38BDF8" stroke-width="2.5"/>
+  <text x="295" y="297" fill="#FFFFFF" font-size="16" font-weight="800" text-anchor="middle">Standby Mission</text>
+  <text x="295" y="320" fill="#FFFFFF" font-size="16" font-weight="800" text-anchor="middle">Dispatch Ingestion</text>
+  <text x="295" y="342" fill="#34D399" font-size="13.5" font-weight="700" text-anchor="middle">(3s Automated Banner)</text>
+
+  <!-- Arrow D2 -> D3 -->
+  <line x1="295" y1="356" x2="295" y2="400" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Node D3: Turn-by-Turn GPS Navigation HUD -->
+  <rect x="165" y="403" width="260" height="88" rx="12" fill="#0F172A" stroke="#38BDF8" stroke-width="2.5"/>
+  <text x="295" y="432" fill="#FFFFFF" font-size="16.5" font-weight="800" text-anchor="middle">GPS Turn-by-Turn</text>
+  <text x="295" y="455" fill="#FFFFFF" font-size="16.5" font-weight="800" text-anchor="middle">Navigation HUD</text>
+  <text x="295" y="476" fill="#94A3B8" font-size="13" font-weight="600" text-anchor="middle">Maneuvers • Speed Telemetry</text>
+
+  <!-- Arrow D3 -> D4 -->
+  <line x1="295" y1="491" x2="295" y2="535" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Node D4: Hazard Geofence Interception -->
+  <rect x="165" y="538" width="260" height="92" rx="12" fill="#0F172A" stroke="#EF4444" stroke-width="2.5"/>
+  <text x="295" y="567" fill="#FFFFFF" font-size="16" font-weight="800" text-anchor="middle">Hazard Geofence</text>
+  <text x="295" y="590" fill="#EF4444" font-size="16" font-weight="800" text-anchor="middle">Alert Interception</text>
+  <text x="295" y="613" fill="#FCA5A5" font-size="13" font-weight="700" text-anchor="middle">Kaziranga Flood • Vehicle Halt</text>
+
+  <!-- Arrow D4 -> D5 -->
+  <line x1="295" y1="630" x2="295" y2="675" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Node D5: Highland Bypass Reroute -->
+  <rect x="165" y="678" width="260" height="94" rx="12" fill="#0F172A" stroke="#10B981" stroke-width="2.5"/>
+  <text x="295" y="707" fill="#FFFFFF" font-size="16" font-weight="800" text-anchor="middle">Highland Bypass</text>
+  <text x="295" y="730" fill="#34D399" font-size="16" font-weight="800" text-anchor="middle">Route Preview &amp; Accept</text>
+  <text x="295" y="753" fill="#94A3B8" font-size="13" font-weight="600" text-anchor="middle">ORS Avoid-Polygon Engine</text>
+
+  <!-- Arrow D5 -> D6 -->
+  <line x1="295" y1="772" x2="295" y2="820" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Node D6: One-Touch Emergency SOS -->
+  <rect x="165" y="823" width="260" height="74" rx="12" fill="#0F172A" stroke="#EF4444" stroke-width="2.5"/>
+  <text x="295" y="852" fill="#FFFFFF" font-size="16.5" font-weight="800" text-anchor="middle">One-Touch</text>
+  <text x="295" y="876" fill="#EF4444" font-size="16.5" font-weight="800" text-anchor="middle">Emergency SOS</text>
+
+
+  <!-- ==================== RIGHT ACTOR 1: DISASTER FIELD OFFICER ==================== -->
+  <g transform="translate(775, 140)">
+    <circle cx="25" cy="18" r="14" fill="none" stroke="#FFFFFF" stroke-width="2.8"/>
+    <line x1="25" y1="32" x2="25" y2="75" stroke="#FFFFFF" stroke-width="2.8"/>
+    <line x1="2" y1="48" x2="48" y2="48" stroke="#FFFFFF" stroke-width="2.8"/>
+    <line x1="25" y1="75" x2="8" y2="110" stroke="#FFFFFF" stroke-width="2.8"/>
+    <line x1="25" y1="75" x2="42" y2="110" stroke="#FFFFFF" stroke-width="2.8"/>
+    <text x="25" y="132" fill="#FFFFFF" font-size="15" font-weight="800" text-anchor="middle">Disaster</text>
+    <text x="25" y="150" fill="#FBBF24" font-size="14" font-weight="800" text-anchor="middle">Field Officer</text>
+  </g>
+
+  <!-- Line from Field Officer to Voice Telemetry -->
+  <line x1="775" y1="188" x2="728" y2="188" stroke="#FFFFFF" stroke-width="2.5" marker-end="url(#arrow-orange)"/>
+
+  <!-- Node H1: Gemini Multilingual Voice Telemetry -->
+  <rect x="465" y="155" width="260" height="88" rx="12" fill="#0F172A" stroke="#F59E0B" stroke-width="2.5"/>
+  <text x="595" y="184" fill="#FFFFFF" font-size="16" font-weight="800" text-anchor="middle">Gemini Multilingual</text>
+  <text x="595" y="207" fill="#FBBF24" font-size="16" font-weight="800" text-anchor="middle">Voice Telemetry</text>
+  <text x="595" y="228" fill="#FDE68A" font-size="13" font-weight="600" text-anchor="middle">Assamese • Bengali • Hindi • English</text>
+
+  <!-- Arrow H1 -> H2 -->
+  <line x1="595" y1="243" x2="595" y2="285" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Node H2: 3D GIS Live Map & Fleet Tracking -->
+  <rect x="465" y="288" width="260" height="88" rx="12" fill="#0F172A" stroke="#38BDF8" stroke-width="2.5"/>
+  <text x="595" y="317" fill="#FFFFFF" font-size="16.5" font-weight="800" text-anchor="middle">3D GIS Vector Map</text>
+  <text x="595" y="340" fill="#38BDF8" font-size="16.5" font-weight="800" text-anchor="middle">&amp; Fleet Tracking</text>
+  <text x="595" y="361" fill="#94A3B8" font-size="13" font-weight="600" text-anchor="middle">Satellite Layers • Geofences</text>
+
+  <!-- Arrow H2 -> H3 -->
+  <line x1="595" y1="376" x2="595" y2="420" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+
+  <!-- ==================== RIGHT ACTOR 2: COMMAND HQ OFFICER ==================== -->
+  <g transform="translate(775, 490)">
+    <circle cx="25" cy="18" r="14" fill="none" stroke="#FFFFFF" stroke-width="2.8"/>
+    <line x1="25" y1="32" x2="25" y2="75" stroke="#FFFFFF" stroke-width="2.8"/>
+    <line x1="2" y1="48" x2="48" y2="48" stroke="#FFFFFF" stroke-width="2.8"/>
+    <line x1="25" y1="75" x2="8" y2="110" stroke="#FFFFFF" stroke-width="2.8"/>
+    <line x1="25" y1="75" x2="42" y2="110" stroke="#FFFFFF" stroke-width="2.8"/>
+    <text x="25" y="132" fill="#FFFFFF" font-size="15" font-weight="800" text-anchor="middle">Command HQ</text>
+    <text x="25" y="150" fill="#38BDF8" font-size="14" font-weight="800" text-anchor="middle">Officer</text>
+  </g>
+
+  <!-- Line from HQ Officer to Hub -->
+  <path d="M 775 540 L 745 540 L 745 332 L 728 332" fill="none" stroke="#FFFFFF" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M 775 540 L 728 540" fill="none" stroke="#FFFFFF" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M 775 540 L 745 540 L 745 700 L 728 700" fill="none" stroke="#FFFFFF" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M 775 540 L 745 540 L 745 860 L 728 860" fill="none" stroke="#FFFFFF" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Node H3: XGBoost 72h Disaster Risk Engine -->
+  <rect x="465" y="423" width="260" height="92" rx="12" fill="#0F172A" stroke="#38BDF8" stroke-width="2.5"/>
+  <text x="595" y="452" fill="#FFFFFF" font-size="16" font-weight="800" text-anchor="middle">XGBoost 72-Hour</text>
+  <text x="595" y="475" fill="#38BDF8" font-size="16" font-weight="800" text-anchor="middle">Risk Forecast Model</text>
+  <text x="595" y="497" fill="#94A3B8" font-size="13" font-weight="600" text-anchor="middle">Precipitation &amp; Landslide Breach</text>
+
+  <!-- Arrow H3 -> H4 -->
+  <line x1="595" y1="515" x2="595" y2="560" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Node H4: Sphere 2018 Supply Shortfall Calculator -->
+  <rect x="465" y="563" width="260" height="92" rx="12" fill="#0F172A" stroke="#38BDF8" stroke-width="2.5"/>
+  <text x="595" y="592" fill="#FFFFFF" font-size="16" font-weight="800" text-anchor="middle">Sphere 2018 Supply</text>
+  <text x="595" y="615" fill="#38BDF8" font-size="16" font-weight="800" text-anchor="middle">Shortfall Calculator</text>
+  <text x="595" y="637" fill="#94A3B8" font-size="13" font-weight="600" text-anchor="middle">Food • Medicine • POL Buffer Deficit</text>
+
+  <!-- Arrow H4 -> H5 -->
+  <line x1="595" y1="655" x2="595" y2="700" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Node H5: 8-State Logistics Rollup & Drilldown -->
+  <rect x="465" y="703" width="260" height="88" rx="12" fill="#0F172A" stroke="#38BDF8" stroke-width="2.5"/>
+  <text x="595" y="732" fill="#FFFFFF" font-size="16" font-weight="800" text-anchor="middle">8-State Rollup &amp;</text>
+  <text x="595" y="755" fill="#38BDF8" font-size="16" font-weight="800" text-anchor="middle">District Drilldown</text>
+  <text x="595" y="776" fill="#94A3B8" font-size="13" font-weight="600" text-anchor="middle">Strategic Reserve Telemetry</text>
+
+  <!-- Arrow H5 -> H6 -->
+  <line x1="595" y1="791" x2="595" y2="825" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Node H6: Emergency Mission Dispatch Creator -->
+  <rect x="465" y="828" width="260" height="88" rx="12" fill="#0F172A" stroke="#10B981" stroke-width="2.5"/>
+  <text x="595" y="857" fill="#FFFFFF" font-size="16.5" font-weight="800" text-anchor="middle">Emergency Mission</text>
+  <text x="595" y="880" fill="#34D399" font-size="16.5" font-weight="800" text-anchor="middle">Dispatch Creator</text>
+  <text x="595" y="901" fill="#A7F3D0" font-size="13" font-weight="600" text-anchor="middle">Driver &amp; Vehicle Allocation</text>
+
+
+  <!-- ==================== CROSS-PLATFORM INTERCONNECT ARROWS ==================== -->
+  <!-- 1. Real-Time Bridge from HQ Dispatch (H6) to Driver Standby (D2) -->
+  <path d="M 465 872 L 442 872 L 442 312 L 428 312" fill="none" stroke="#34D399" stroke-width="3" stroke-dasharray="6,4" marker-end="url(#arrow-green)"/>
+  <rect x="360" y="360" width="168" height="28" rx="6" fill="#064E3B" stroke="#059669" stroke-width="1.5"/>
+  <text x="444" y="379" fill="#A7F3D0" font-size="11.5" font-weight="800" text-anchor="middle">3s Dispatch Bridge</text>
+
+  <!-- 2. Incident Link from Gemini Telemetry (H1) to Driver Geofence (D4) -->
+  <path d="M 465 199 L 450 199 L 450 584 L 428 584" fill="none" stroke="#FBBF24" stroke-width="2.5" stroke-dasharray="5,3" marker-end="url(#arrow-orange)"/>
+
+  <!-- 3. Driver SOS (D6) to HQ GIS Map (H2) -->
+  <path d="M 425 860 L 450 860 L 450 332 L 462 332" fill="none" stroke="#EF4444" stroke-width="2.5" stroke-dasharray="5,3" marker-end="url(#arrow-red)"/>
+
+  <!-- Bottom Core Technology Bar -->
+  <rect x="65" y="960" width="750" height="96" rx="12" fill="#0B132B" stroke="#1E3A8A" stroke-width="2"/>
+  <text x="440" y="990" fill="#38BDF8" font-size="16" font-weight="900" text-anchor="middle" letter-spacing="1">DISTRIBUTED CORE INFRASTRUCTURE</text>
+  <text x="440" y="1016" fill="#E2E8F0" font-size="14.5" font-weight="700" text-anchor="middle">OpenRouteService HGV Avoid-Polygons • MapLibre GL 3D WebGL • Node.js Real-Time Bridge</text>
+  <text x="440" y="1038" fill="#94A3B8" font-size="13" font-weight="600" text-anchor="middle">Open-Meteo &amp; OpenWeather Climate Feeds • Google Gemini Multilingual AI • Sphere 2018 Standards</text>
+
+  <!-- Footer Caption -->
+  <text x="440" y="1090" fill="#64748B" font-size="13" font-weight="600" text-anchor="middle">NERLIMS Disaster Resilience Architecture | Ministry of Development of North Eastern Region (MDoNER)</text>
+</svg>
